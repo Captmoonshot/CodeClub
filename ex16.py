@@ -1,6 +1,9 @@
 # ex16.py
 # by Zed Shaw
 
+"""In this program, we write to a file by using the input() fuction to get user input, 
+and then writing to a file with the .write() method."""
+
 from sys import argv
 
 script, filename = argv
