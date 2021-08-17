@@ -2,35 +2,12 @@ from sys import argv
 
 script, filename = argv
 
-print(f"We are going to erase {filename}.")
-print("If you don't want that hit CTRL-C.")
-print("If you do want that press ENTER.")
+in_file = open(filename)
+indata = in_file.read()
 
-input("?")
+to_file = "ex17_sample.txt"
 
-print("Opening file...")
-target = open(filename, 'w')
 
-print("Truncating file.  Goodbye!")
-target.truncate()
-
-print("Now I'm going to ask you for three lines.")
-
-line1 = input("line 1: ")
-line2 = input("line 2: ")
-line3 = input("line 3: ")
-
-print("Now we are going to write these to a file.")
-
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
-
-print("Finally, we close the file.")
-target.close()
 
 
 
