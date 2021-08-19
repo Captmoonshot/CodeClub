@@ -6,7 +6,6 @@ def generate_random_number():
     random_number = random.randint(0, 10)
     return random_number
 
-
 def random_sentence():
     number_one = generate_random_number()
     number_two = generate_random_number()
