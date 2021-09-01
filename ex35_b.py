@@ -1,4 +1,4 @@
-# ex35.py
+# ex35_b.py
 # by Zed Shaw
 
 from sys import exit
@@ -6,12 +6,8 @@ from sys import exit
 def gold_room():
     print("This room is full of gold.  How much do you take?")
 
-    choice = input("> ")
-    if "0" in choice or "1" in choice:
-        how_much = int(choice)
-    else:
-        dead("Man, learn to type a number.")
-
+    how_much = int(input("> "))
+    
     if how_much < 50:
         print("Nice, you're not greedy, you win!")
         exit(0)
@@ -43,7 +39,7 @@ def bear_room():
 
 def cthulhu_room():
     print("Here you see the great evil Cthulu.")
-    print("He, it, whatever stares at you and you go insane.")
+    print("He, it, whatever stares at you and you go insance.")
     print("Do you flee for your life or eat your head?")
 
     choice = input("> ")
@@ -73,8 +69,10 @@ def start():
     else:
         dead("You stumble around the room until you starve.")
 
-
 start()
+
+
+        
 
 
 
