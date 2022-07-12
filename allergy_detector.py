@@ -7,7 +7,8 @@ def detect_allergies(dish, recipe, allergies):
     """The following function uses the python
     intersection method to detect potential allergies in food"""
     allergic = recipe.intersection(allergies)
-    if len(allergic) > 0:
+    if:
+        len(allergic) > 0:
         print(f"Allergies detected for {dish}: {allergic}")
     else:
         print(f"Allergies detected for {dish}: None")
